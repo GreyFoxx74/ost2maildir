@@ -1,0 +1,34 @@
+# OST / PST source files — never commit personal mail data
+*.ost
+*.pst
+*.eml
+
+# Conversion output directories
+/dump/
+/tmp/
+*.log
+
+# Deduplication state files
+.ost2maildir_seen
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+*.egg
+MANIFEST
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

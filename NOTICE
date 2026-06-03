@@ -1,0 +1,5 @@
+This software uses the following open-source libraries:
+- libpff (https://github.com/libyal/libpff) — LGPL-3.0
+- chardet — LGPL-2.1
+- icalendar — LGPL-3.0
+Users may substitute these libraries with compatible versions.

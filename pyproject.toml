@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ost2maildir"
+version = "1.0.0"
+description = "Convert Microsoft Outlook OST files to Dovecot-compatible Maildir++ format"
+authors = [{ name = "GreyFoxx74" }]
+license = { file = "LICENSE" }
+readme = "USAGE.md"
+requires-python = ">=3.10"
+dependencies = [
+    "libpff-python>=20231205",
+    "tnefparse>=1.4.0",
+    "striprtf>=0.0.26",
+    "icalendar>=5.0",
+    "vobject>=0.9.6",
+    "click>=8.1",
+    "tqdm>=4.66",
+    "chardet>=5.0",
+]
+
+[project.scripts]
+ost2maildir = "ost2maildir.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ost2maildir*"]
